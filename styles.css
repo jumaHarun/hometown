@@ -89,7 +89,7 @@ img {
 .activity {
     display: flex;
     padding: 1em .5em;
-    min-height: 300px;
+    min-height: 400px;
     align-items: center;
 }
 
@@ -100,8 +100,7 @@ img {
 }
 
 .activity-img {
-    max-width: 350px;
-    width: 100%;
+    max-width: 400px;
     border-radius: 5px;
     margin: 0 10px;
 }
@@ -127,4 +126,10 @@ img {
     font-style: italic;
     font-size: .8rem;
     margin-top: 1.5em;
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+    border-color: rgba(255, 255, 255, .3);
 }
