@@ -1,2 +1,3 @@
-# hometown
- Scrimba Hometown Solo Project
+# Lamu | Hometown
+ 
+This is a solution to the Scrimba Hometown Solo Project
