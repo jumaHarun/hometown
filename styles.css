@@ -1,0 +1,130 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeSpeed;
+    text-align: center;
+    background: linear-gradient(#011627 0 65%, #2ec4b6);
+    color: #fdfffc;
+}
+
+h1, h2, h3, h4, p {
+   text-shadow: 0px 0px 2px black;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.hero {
+    background-image: url(/images/Lamu-Waterfront.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    padding: 1.2em;
+}
+
+.hero-title {
+    font-size: 3rem;
+}
+
+.hero-desc {
+    font-style: italic;
+}
+
+.hero-cta {
+    font-size: 1.6rem;
+}
+
+#hero-span {
+    color: #e71d36;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ff9f1c;
+}
+
+.activities {
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.activities-title {
+    font-size: 2rem;
+    margin: 1em 0;
+}
+
+.activity {
+    display: flex;
+    padding: 1em .5em;
+    min-height: 300px;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .activity {
+        flex-direction: column;
+    }
+}
+
+.activity-img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.activity-title {
+    margin-bottom: 1em;
+    color: #ff9f1c;
+}
+
+.guide {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-block: 1em;
+}
+
+.guide-avatar {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.guide-desc {
+    font-style: italic;
+    font-size: .8rem;
+    margin-top: 1.5em;
+}
