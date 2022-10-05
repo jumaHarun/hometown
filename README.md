@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e198d82a-ec95-48de-ba3f-3e2ac3c621f1/deploy-status)](https://app.netlify.com/sites/jharun-hometown/deploys)
+
 # Lamu | Hometown
  
 This is a solution to the Scrimba Hometown Solo Project
