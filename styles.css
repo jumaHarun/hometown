@@ -47,7 +47,7 @@ img {
 }
 
 .hero {
-    background-image: url(/images/Lamu-Waterfront.png);
+    background-image: url("/images/lamu.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;
