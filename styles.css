@@ -24,7 +24,7 @@ h1, h2, h3, h4, p {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -55,7 +55,7 @@ img {
     flex-direction: column;
     justify-content: center;
     gap: 2em;
-    padding: 1.2em;
+    padding: 1em;
 }
 
 .hero-title {
