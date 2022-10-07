@@ -24,7 +24,7 @@ h1, h2, h3, h4, p {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -83,18 +83,16 @@ img {
 
 .activities-title {
     font-size: 2rem;
-    margin: 1em 0;
 }
 
 .activity {
     display: flex;
-    padding: 1em .5em;
+    padding: 1em;
     min-height: 400px;
     align-items: center;
-    border: 1px solid red;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 42em) {
     .activity {
         flex-direction: column;
     }
