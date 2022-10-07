@@ -91,6 +91,7 @@ img {
     padding: 1em .5em;
     min-height: 400px;
     align-items: center;
+    border: 1px solid red;
 }
 
 @media (max-width: 600px) {
