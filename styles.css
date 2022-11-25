@@ -1,134 +1,153 @@
-*, 
+*,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 html:focus-within {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
-    line-height: 1.5;
-    font-family: 'Montserrat', sans-serif;
-    text-rendering: optimizeSpeed;
-    text-align: center;
-    background: linear-gradient(#011627 0 65%, #2ec4b6);
-    color: #fdfffc;
-}
-
-h1, h2, h3, h4, p {
-   text-shadow: 0px 0px 2px black;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  text-rendering: optimizeSpeed;
+  text-align: center;
+  background: linear-gradient(#011627 0 65%, #229c90);
+  color: #fdfffc;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .row-reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .hero {
-    background-image: url("/images/lamu.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2em;
-    padding: 1em;
+  background-image: url("/images/lamu.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  text-shadow: 3px 0px 5px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em;
 }
 
 .hero-title {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .hero-desc {
-    font-style: italic;
+  font-style: italic;
 }
 
 .hero-cta {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 #hero-span {
-    color: #e71d36;
-    text-transform: uppercase;
-    border-bottom: 3px solid #ff9f1c;
+  color: #e71d36;
+  text-decoration: underline #ff9f1c;
+  text-transform: uppercase;
+  padding: 3px;
+  background-color: #011627;
+  border-radius: 5px;
 }
 
 .activities {
-    max-width: 800px;
-    margin: 2em auto;
+  max-width: 800px;
+  margin: 2em auto;
 }
 
 .activities-title {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .activity {
-    display: flex;
-    padding: 1em;
-    min-height: 400px;
-    align-items: center;
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  min-height: 400px;
+  align-items: center;
 }
 
-@media (max-width: 42em) {
-    .activity {
-        flex-direction: column;
-    }
+.activity div {
+  text-align: left;
 }
 
 .activity-img {
-    max-width: 400px;
-    border-radius: 5px;
-    margin: 0 10px;
+  max-width: 400px;
+  border-radius: 5px;
+  margin: 0 10px;
 }
 
 .activity-title {
-    margin-bottom: 1em;
-    color: #ff9f1c;
+  margin-bottom: 0.5em;
+  color: #ff9f1c;
 }
 
 .guide {
-    display: flex;
-    max-width: 500px;
-    margin: 0 auto;
-    padding-block: 1em;
+  display: flex;
+  gap: 1em;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-block: 1em;
 }
 
 .guide-avatar {
-    width: 150px;
-    border-radius: 5px;
+  width: 100px;
+  border-radius: 5px;
 }
 
 .guide-desc {
-    font-style: italic;
-    font-size: .8rem;
-    margin-top: 1.5em;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-top: 1.5em;
 }
 
 hr {
-    width: 70%;
-    margin: 0 auto;
-    border-color: rgba(255, 255, 255, .3);
+  width: 75%;
+  margin: 0 auto;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 42em) {
+  body {
+    font-size: 14px;
+  }
+
+  .activity {
+    flex-direction: column;
+  }
+
+  .activity-img {
+    max-width: 100%;
+  }
+
+  hr {
+    margin-bottom: 1em;
+  }
 }
